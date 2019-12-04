@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="...">
 <style>
 body, html {
   height: 100%;
@@ -45,13 +47,13 @@ body, html {
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">social media link?</span>
+    <span class="w3-tag">Let Us Guide You Through</span>
   </div>
   <div class="w3-display-middle w3-center">
     <span class="w3-text-white" style="font-size:90px">Fly<br>ME To</span>
   </div>
   <div class="w3-display-bottomright w3-center w3-padding-large">
-    <span class="w3-text-white">?</span>
+    <span class="w3-text-white">Allow Time For What You Love</span>
   </div>
 </header>
 
@@ -81,46 +83,84 @@ body, html {
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TRIPS</span></h5>
 
     <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Eat</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'London');" id="myLink">
+        <div class="w3-col s6 tablink">London</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Drink</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'New York');">
+        <div class="w3-col s6 tablink">New York</div>
       </a>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Venice');">
+      <div class="w3-col s6 tablink">Venice</div>
+    </a>
+<a href="javascript:void(0)" onclick="openMenu(event, 'Moscow');">
+  <div class="w3-col s6 tablink">Moscow</div>
+</a>
     </div>
 
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Bread Basket</h5>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    <div id="London" class="w3-container menu w3-padding-48 w3-card">
+      <h5>9:00am</h5>
+      <p class="w3-text-grey">Underground Oxford St?</p><br>
 
-      <h5>Honey Almond Granola with Fruits</h5>
-      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+      <h5>12:00pm</h5>
+      <p class="w3-text-grey">Lunch?</p><br>
 
-      <h5>Belgian Waffle</h5>
-      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+      <h5>2:00pm</h5>
+      <p class="w3-text-grey">Zoo?</p><br>
 
-      <h5>Scrambled eggs</h5>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+      <h5>4:00pm</h5>
+      <p class="w3-text-grey">Museum?</p><br>
 
-      <h5>Blueberry Pancakes</h5>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+      <h5>6:00pm</h5>
+      <p class="w3-text-grey">eat?</p>
     </div>
 
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Coffee</h5>
-      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    <div id="New York" class="w3-container menu w3-padding-48 w3-card">
+      <h5>9:00am</h5>
+      <p class="w3-text-grey">Breakfast?</p><br>
 
-      <h5>Chocolato</h5>
-      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+      <h5>12pm?</h5>
+      <p class="w3-text-grey">Statue of Liberty?</p><br>
 
-      <h5>Corretto</h5>
-      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+      <h5>4:00pm</h5>
+      <p class="w3-text-grey">some activity</p><br>
 
-      <h5>Iced tea</h5>
-      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+      <h5>Time</h5>
+      <p class="w3-text-grey">some activity</p><br>
 
-      <h5>Soda</h5>
-      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+      <h5>Later</h5>
+      <p class="w3-text-grey">sleep</p>
+    </div>
+    <div id="Venice" class="w3-container menu w3-padding-48 w3-card">
+      <h5>9:00am</h5>
+      <p class="w3-text-grey">wake up?</p><br>
+
+      <h5>12:00pm</h5>
+      <p class="w3-text-grey">Lunch?</p><br>
+
+      <h5>2:00pm</h5>
+      <p class="w3-text-grey">walk?</p><br>
+
+      <h5>4:00pm</h5>
+      <p class="w3-text-grey">Museum?</p><br>
+
+      <h5>6:00pm</h5>
+      <p class="w3-text-grey">eat?</p>
+    </div>
+    <div id="Moscow" class="w3-container menu w3-padding-48 w3-card">
+      <h5>9:00am</h5>
+      <p class="w3-text-grey">wake up?</p><br>
+
+      <h5>12:00pm</h5>
+      <p class="w3-text-grey">Lunch?</p><br>
+
+      <h5>2:00pm</h5>
+      <p class="w3-text-grey">walk?</p><br>
+
+      <h5>4:00pm</h5>
+      <p class="w3-text-grey">Museum?</p><br>
+
+      <h5>6:00pm</h5>
+      <p class="w3-text-grey">eat?</p>
     </div>
     <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
   </div>
@@ -168,6 +208,8 @@ function openMenu(evt, menuName) {
   evt.currentTarget.firstElementChild.className += " w3-dark-grey";
 }
 document.getElementById("myLink").click();
+
+
 </script>
 
 </body>
