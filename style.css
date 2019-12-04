@@ -1,17 +1,22 @@
 .bg-custom-2 {
-  background-image: linear-gradient(90deg, #e16879 0%, #e8ebc2 100%);
+  background-image: linear-gradient(90deg, #405c70 0%, #161819 100%);
+  opacity: 0.5;
+  filter: alpha(opacity=15);
 }
 
 .navbar a {
-  color: white !important;
-  font-size: 1.3em !important;
-}
-
-.navbar a {
+  font-size: 1.5em !important;
+  font-weight: bold;
   float: right;
 }
 
-body, html {
+.navbar-nav > li {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+body,
+html {
   height: 100%;
   font-family: "Inconsolata", sans-serif;
 }
