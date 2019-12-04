@@ -10,3 +10,19 @@
 .navbar a {
   float: right;
 }
+
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1491484925566-336b202157a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
