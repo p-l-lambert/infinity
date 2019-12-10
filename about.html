@@ -57,43 +57,133 @@
     </form>
     </nav>
 
+<!-- Meet the team black table template -->
+<style>
+p {
+  margin: 135px 0px 40px;
 
-
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Powered by <a href="https://github.com/p-l-lambert/infinity" title="INFINITY" target="_blank" class="w3-hover-text-green">INFINITY</a></p>
-</footer>
-
-<script>
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"
-></script>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-
-<script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
-<script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
-
-
-<script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
 }
-document.getElementById("myLink").click();
+</style>
+<p class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Meet our team!</span></p>
+
+<!-- The cards -->
+
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 23%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin: 0px 0px 0px 20px
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="Maisha" style="width:100%">
+      <div class="container">
+        <h2>Maisha Chowdhury</h2>
+        <p class="title">CEO</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+      <div class="card">
+        <img src="/w3images/team2.jpg" alt="Abbie" style="width:100%">
+        <div class="container">
+          <h2>Abbie Hettle</h2>
+          <p class="title">Art Director</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>example@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="/w3images/team3.jpg" alt="Polly" style="width:100%">
+        <div class="container">
+          <h2>Polly Lambert</h2>
+          <p class="title">Designer</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>example@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="Tatiana" alt="Tatiana" style="width:100%">
+        <div class="container">
+          <h2>Tatiana Evseeva</h2>
+          <p class="title">Geographer</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>example@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  </html>
 
 
 </script>
