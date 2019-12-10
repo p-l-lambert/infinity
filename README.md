@@ -1,1 +1,1 @@
-hello
+Welcome to Team Infinity! 
